@@ -92,6 +92,12 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            label: 'API reference test',
+            href: '/api-reference/help.html',
+            prependBaseUrlToHref: true,
+            target: '_blank'
           }
         ],
       },
