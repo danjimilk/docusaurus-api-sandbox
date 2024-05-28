@@ -11,10 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://danjimilk.github.io',
+  url: 'http://localhost:3000',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docusaurus-api-sandbox',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -95,9 +95,19 @@ const config = {
           },
           {
             label: 'API reference test',
-            href: '/api-reference/help.html',
-            prependBaseUrlToHref: true,
+            href: 'pathname:///api-reference/help.html',
+            autoAddBaseUrl: false
+          },
+          {
+            label: 'API reference test 2',
+            href: 'pathname:///api-reference/help.html',
             target: '_blank'
+          },
+          {
+            label: 'API reference test 3',
+            href: '/api-reference/help.html',
+            target: '_blank',
+            prependBaseUrlToHref: true
           }
         ],
       },
