@@ -94,11 +94,6 @@ const config = {
             label: 'Tutorial',
           },
           {
-            label: 'API reference test',
-            href: 'pathname:///api-reference/help.html',
-            autoAddBaseUrl: false
-          },
-          {
             label: 'API reference test 2',
             href: 'pathname:///api-reference/help.html',
             target: '_blank'
